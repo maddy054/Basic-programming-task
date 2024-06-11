@@ -31,7 +31,7 @@ public class BasicProgrammingTask {
 		{
 			createDir(path);
 		}
-		
+
 		myFile.createNewFile();
 	    return myFile;
 	}
@@ -44,6 +44,7 @@ public class BasicProgrammingTask {
 			{
 				myBuffer.write(text[i]);
 				myBuffer.newLine();
+			
 			}
 		}
 	}
@@ -72,6 +73,7 @@ public class BasicProgrammingTask {
     	
         try(FileReader myReader = new FileReader(myFile)){
         	myProperties.load(myReader);
+        
         }
        
     }
